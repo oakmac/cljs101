@@ -1,0 +1,17 @@
+{
+  "author": "Chris Oakman <chris@oakmac.com> (http://chrisoakman.com/)",
+  "name": "cljs101",
+  "description": "Programming exercises for a beginning ClojureScript programmer.",
+  "version": "1.0.0",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oakmac/cljs101.git"
+  },
+  "devDependencies": {
+    "shadow-cljs": "2.11.14"
+  },
+  "scripts": {
+    "test": "shadow-cljs watch tests"
+  }
+}

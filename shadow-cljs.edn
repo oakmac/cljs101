@@ -1,0 +1,10 @@
+{:source-paths ["src-cljs" "src-test"]
+ :dependencies []
+ :builds
+ {:app {:target :node-script
+        :output-to "app.js"
+        :main cljs101.core/-main}
+
+  :tests {:target :node-test
+          :output-to "target/tests.js"
+          :autorun true}}}
