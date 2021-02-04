@@ -59,7 +59,7 @@
             [25, 12] "rocket"))
 
 ;; Maps can be tested for equality
-(= wild-map wild-map2) ;; --> true
+(= wild-map wild-map2)         ;; --> true
 (= wild-map course-instructor) ;; --> false
 
 ;; "change" a map using assoc (associate)
@@ -71,7 +71,8 @@
 (def abc-map {:a "a", :b "b", :c "c"})
 (def ab-map  {:a "a", :b "b"})
 
-(= ab-map (dissoc abc-map :c)) ;; --> true
+(= ab-map (dissoc abc-map :c))      ;; --> true
+(= {:a "a"} (dissoc abc-map :b :c)) ;; --> true
 
 ;; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; Define a Map "me" that has the following keys => value type
