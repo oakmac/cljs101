@@ -1,15 +1,18 @@
 # ClojureScript 101
 
-Programming exercises for a beginning ClojureScript programmer.
+Programming exercises for a beginning ClojureScript programmer. These exercises
+are part of the curriculum for the [Professional ClojureScript course].
 
 These exercises are focused on the basics of the language:
 
 - parenthesis balancing
 - `def` forms
 - Strings
-- Numbers
+- TODO: Numbers
 - Keywords
-- Map, Vector, Set literals
+- Maps
+- TODO: Vectors
+- TODO: Sets
 
 These exercises do not contain much logic. They are more focused on practicing
 writing basic syntax and getting comfortable with your development environment.
@@ -45,6 +48,7 @@ The goal is to get the test suite to pass all conditions. Good luck!
 
 [ISC License](LICENSE.md)
 
+[Professional ClojureScript course]:https://cljs.pro
 [Node.js]:https://nodejs.org/
 [npm]:https://en.wikipedia.org/wiki/Npm_(software)
 [JVM]:https://adoptopenjdk.net/
