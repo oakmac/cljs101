@@ -1,4 +1,4 @@
-# ClojureScript 101 - Programming Exercises for Beginners
+# ClojureScript 101
 
 Programming exercises for a beginning ClojureScript programmer.
 
@@ -26,7 +26,7 @@ This will install a folder named `node_modules/` into this folder.
 
 ## Exercise Directions
 
-You will be writing in the `.cljs` files found in `src-cljs/cljs101/exercises/` folder.
+You will be writing in the `.cljs` files found in the `src-cljs/cljs101/exercises/` folder.
 
 Open the file `src-cljs/cljs101/exercises/ex101_def_forms.cljs` in your text
 editor and follow the instructions in the code.
