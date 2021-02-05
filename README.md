@@ -8,10 +8,10 @@ These exercises are focused on the basics of the language:
 - parenthesis balancing
 - `def` forms
 - Strings
-- TODO: Numbers
+- TODO: Numbers and Math
 - Keywords
 - Maps
-- TODO: Vectors
+- Vectors
 - TODO: Sets
 
 These exercises do not contain much logic. They are more focused on practicing
