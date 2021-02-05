@@ -7,6 +7,14 @@
               the-old-pond another-year
               num-letters-in-samantha reverse-samantha proper-samantha loud-samantha tha-suffix?]]))
 
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; NOTE FOR STUDENTS: this file is for the test suite
+;; Please do your work in src-cljs/cljs101/exercises/ex102_strings.cljs
+;; Thank you 😊
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 (deftest simple-strings-test
   (is (not (str/blank? fav-pizza-topping)))
   (is (not (str/blank? fav-ice-cream)))

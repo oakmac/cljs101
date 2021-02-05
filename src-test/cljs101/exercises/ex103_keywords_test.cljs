@@ -7,6 +7,14 @@
               z jane-user-id user-display-name
               jane-username-kwd john-password jane-password is-a-sen?]]))
 
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; NOTE FOR STUDENTS: this file is for the test suite
+;; Please do your work in src-cljs/cljs101/exercises/ex103_keywords.cljs
+;; Thank you 😊
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 (deftest simple-keywords-test
   (is (= apple :apple))
   (is (= banana :banana))

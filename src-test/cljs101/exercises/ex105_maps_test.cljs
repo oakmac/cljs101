@@ -8,6 +8,14 @@
               game-state2 game-state3 game-state4
               suzie-options current-options new-search-options]]))
 
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; NOTE FOR STUDENTS: this file is for the test suite
+;; Please do your work in src-cljs/cljs101/exercises/ex105_maps.cljs
+;; Thank you 😊
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 (defn person-map? [m]
   (and (map? m)
        (not (str/blank? (:fname m)))

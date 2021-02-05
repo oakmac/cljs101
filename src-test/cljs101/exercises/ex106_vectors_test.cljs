@@ -8,6 +8,14 @@
               lunch-line2 lunch-line3 first-eater num-hungry-students
               grocery-list favorite-numbers toys-collection updated-grocery-list]]))
 
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; NOTE FOR STUDENTS: this file is for the test suite
+;; Please do your work in src-cljs/cljs101/exercises/ex106_vectors.cljs
+;; Thank you 😊
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+;; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 (defn friend-name? [n]
   (and (string? n)
        (not (str/blank? n))))
