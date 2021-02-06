@@ -1,6 +1,4 @@
-(ns cljs101.exercises.ex106-vectors
-  (:require
-    [clojure.string :as str]))
+(ns cljs101.exercises.ex106-vectors)
 
 (declare my-friends my-enemies
          first-fruit second-fruit third-fruit unknown-fruit

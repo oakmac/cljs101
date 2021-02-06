@@ -12,7 +12,7 @@ These exercises are focused on the basics of the language:
 - Keywords
 - Maps
 - Vectors
-- TODO: Sets
+- Sets
 
 These exercises do not contain much logic. They are more focused on practicing
 writing basic syntax and getting comfortable with your development environment.
