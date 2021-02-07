@@ -38,13 +38,14 @@
 ;; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; Let's use a few simple String functions
 ;;
-;; (str/reverse "abc") ;; <-- "cba"
-;; (count "xyz")       ;; <-- 3
-;; (str/blank? "")          ;; <-- true
-;; (str/blank? "candy bar") ;; <-- false
-;; (str/capitalize "texas") ;; <-- "Texas"
-;; (str/upper-case "xyz")   ;; <-- "XYZ"
-;; (str/ends-with? "banana" "ana") ;; <-- true
+
+(str/reverse "abc") ; => "cba"
+(count "xyz")       ; => 3
+(str/blank? "")     ; => true
+(str/blank? "candy bar") ; => false
+(str/capitalize "texas") ; => "Texas"
+(str/upper-case "xyz")   ; => "XYZ"
+(str/ends-with? "banana" "ana") ; => true
 
 (def samantha "samantha")
 

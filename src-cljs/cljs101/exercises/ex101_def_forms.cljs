@@ -9,9 +9,10 @@
 ;; These are similar to const in JavaScript and variables in other languages.
 ;;
 ;; Examples:
-;; (def my-name "Chris Oakman")
-;; (def your-name "Jimmy Jimbob")
-;; (def num-cookies 5)
+
+(def my-name "Chris Oakman")
+(def your-name "Jimmy Jimbob")
+(def num-cookies 5)
 
 ;; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; Write five def forms below: my-name, your-name, my-job, my-age, your-age

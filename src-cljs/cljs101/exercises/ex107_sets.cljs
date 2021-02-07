@@ -15,7 +15,7 @@
 
 (def cardinal-directions #{:north :south :west :east})
 
-(def bingo-number #{23 14 2 28 46 16})
+(def bingo-numbers #{23 14 2 28 46 16})
 
 (def set-with-mixed-values
   #{"Amanda"
@@ -27,17 +27,18 @@
     #{}})
 
 ;; if you try to create a literal Set with duplicate values you will get a compiler error
-; (def illegal-set #{"a" "a" "b"}) ;; => compiler error: Duplicate key
+; (def illegal-set #{"a" "a" "b"}) ; => compiler error: Duplicate key
 
 ;; you can create a Set using the set function
 (def cardinal-directions2 (set [:south :east :west :north]))
 
-(= cardinal-directions cardinal-directions2) ;; => true
+(= cardinal-directions cardinal-directions2) ; => true
 
-;; the items in a Set do not have a specific order
+;; there is no "order" of items in a Set
 (def letters1 #{"a" "b" "c"})
 (def letters2 #{"b" "c" "a"})
-(= letters1 letters2) ;; => true
+
+(= letters1 letters2) ; => true
 
 ;; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; Does a Set contain an item?
@@ -45,12 +46,12 @@
 (def students #{"Jimmy" "Billy" "Sally" "Katie"})
 
 ;; there are several ways to tell if an item is in a Set:
-(get students "Jimmy") ;; => true
-(contains? students "Jimmy") ;; => true
+(get students "Jimmy") ; => true
+(contains? students "Jimmy") ; => true
 
 ;; like Vectors and Maps, Sets can be used as a function to check their values:
-(students "Jimmy") ;; => true
-(students "John")  ;; => false
+(students "Jimmy") ; => true
+(students "John")  ; => false
 
 ;; Define katie-is-a-student? and samantha-is-a-student? by checking the students set
 
@@ -63,15 +64,15 @@
 ;; you can "add" an item to a Set using conj
 (def more-letters (conj some-letters "d"))
 
-(= more-letters #{"a" "b" "c" "d"}) ;; => true
+(= more-letters #{"a" "b" "c" "d"}) ; => true
 
 ;; if you conj an item into a Set that already contains that item, it does nothing
 ;; and there is no error
-(= some-letters (conj some-letters "b")) ;; => true
+(= some-letters (conj some-letters "b")) ; => true
 
 ;; "remove" an item from a Set using disj
 (def less-letters (disj some-letters "a"))
-(= less-letters #{"b" "c"}) ;; => true
+(= less-letters #{"b" "c"}) ; => true
 
 ;; Define students-with-betty and students-without-jimmy
 

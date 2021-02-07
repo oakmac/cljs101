@@ -43,9 +43,9 @@
    :username "user7892" ;; Keyword as a key
    [25, 12] "rocket"})  ;; Vector as a key
 
-(= (get wild-map [25, 12]) "rocket") ;; --> true
-(= (get wild-map 7) "seven") ;; --> true
-(= (get wild-map {:x 4, :y 2}) [7 8 9]) ;; --> true
+(= (get wild-map [25, 12]) "rocket") ; => true
+(= (get wild-map 7) "seven") ; => true
+(= (get wild-map {:x 4, :y 2}) [7 8 9]) ; => true
 
 ;; Maps can also be created with the (hash-map) function
 ;; NOTE 1: the literal syntax using {} is more common
@@ -59,20 +59,20 @@
             [25, 12] "rocket"))
 
 ;; Maps can be tested for equality
-(= wild-map wild-map2)         ;; --> true
-(= wild-map course-instructor) ;; --> false
+(= wild-map wild-map2)         ; => true
+(= wild-map course-instructor) ; => false
 
 ;; "change" a map using assoc (associate)
 (def another-point (assoc some-point :x 5))
 
-(= another-point {:x 5, :y 12}) ;; --> true
+(= another-point {:x 5, :y 12}) ; => true
 
 ;; the opposite of assoc is dissoc (dissociate)
 (def abc-map {:a "a", :b "b", :c "c"})
 (def ab-map  {:a "a", :b "b"})
 
-(= ab-map (dissoc abc-map :c))      ;; --> true
-(= {:a "a"} (dissoc abc-map :b :c)) ;; --> true
+(= ab-map (dissoc abc-map :c))      ; => true
+(= {:a "a"} (dissoc abc-map :b :c)) ; => true
 
 ;; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; Define a Map "me" that has the following keys => value type
@@ -142,12 +142,12 @@
 ;; Example:
 (def m1 {:a "a", :b "b"})
 (def m2 {:b "BBBB"})
-(def m3 (merge m1 m2)) ;; --> {:a "a", :b "BBBB"} (m2's :b key "wins")
-(def m4 (merge m2 m1)) ;; --> {:a "a", :b "b"}    (m1's :b key "wins")
+(def m3 (merge m1 m2)) ; => {:a "a", :b "BBBB"} (m2's :b key "wins")
+(def m4 (merge m2 m1)) ; => {:a "a", :b "b"}    (m1's :b key "wins")
 
 (def m5 {:b "bee!" :c "cee!"})
-(def m6 (merge m1 m2 m5)) ;; --> {:a "a", :b "bee!", :c "cee!"}
-(def m7 (merge m1 m5 m2 {:a "aaa!"})) ;; --> {:a "aaa!", :b "BBBB", :c "cee!"}
+(def m6 (merge m1 m2 m5)) ; => {:a "a", :b "bee!", :c "cee!"}
+(def m7 (merge m1 m5 m2 {:a "aaa!"})) ; => {:a "aaa!", :b "BBBB", :c "cee!"}
 
 
 ;; Here are the default options for a Dashboard page of an application:

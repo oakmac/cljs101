@@ -22,9 +22,9 @@
 ;;
 ;; Some example Vectors:
 
-(def people ["Jimmy" "Sally" "Roger"]) ;; => three Strings
+(def people ["Jimmy" "Sally" "Roger"]) ; => three Strings
 
-(def points [{:x 5 :y 8} {:x 6 :y 9} {:x 7 :y 10}]) ;; => three Maps
+(def points [{:x 5 :y 8} {:x 6 :y 9} {:x 7 :y 10}]) ; => three Maps
 
 ;; this Vector contains two Strings, a number, a Map, and the boolean true
 (def mixed-items
@@ -47,19 +47,19 @@
 
 (def fruits ["apple" "banana" "cherry"])
 
-(nth fruits 1) ;; => "banana"
-(get fruits 1) ;; => "banana"
+(nth fruits 1) ; => "banana"
+(get fruits 1) ; => "banana"
 
 ;; A Vector may be used as a function to retrieve items from itself!
-(fruits 1) ;; => "banana"
+(fruits 1) ; => "banana"
 
 ;; Optionally provide a default value if the index does not exist:
-(nth fruits 54 "not found!") ;; => "not found!"
-(get fruits 54 "not found!") ;; => "not found!"
-(fruits 54 "not found!") ;; => "not found!"
+(nth fruits 54 "not found!") ; => "not found!"
+(get fruits 54 "not found!") ; => "not found!"
+(fruits 54 "not found!") ; => "not found!"
 
 ;; Be careful accessing a Vector if you are unsure of the index:
-; (nth fruits 54) ;; => vector-index-out-of-bounds runtime error
+; (nth fruits 54) ; => vector-index-out-of-bounds runtime error
 
 ;; Define first-fruit, second-fruit, third-fruit, unknown-fruit here using different
 ;; Vector access functions. For unknown-fruit, use an invalid index with the default
@@ -74,21 +74,21 @@
 ;; the conj function adds elements at the end of a Vector
 ;; note that conj does not "change" the original Vector, it returns a new one
 ;; this is a fast operation, even for very large Vectors
-(def more-primes (conj primes 11)) ;; => [2 3 5 7 11]
-(def even-more-primes (conj primes 11 13 17)) ;; => [2 3 5 7 11 13 17]
+(def more-primes (conj primes 11)) ; => [2 3 5 7 11]
+(def even-more-primes (conj primes 11 13 17)) ; => [2 3 5 7 11 13 17]
 
 ;; you may also use assoc on Vectors
-(def incorrect-primes1 (assoc primes 0 24)) ;; => [24 3 5 7]
-(def incorrect-primes2 (assoc primes 1 24)) ;; => [2 24 5 7]
+(def incorrect-primes1 (assoc primes 0 24)) ; => [24 3 5 7]
+(def incorrect-primes2 (assoc primes 1 24)) ; => [2 24 5 7]
 
 ;; you may assoc at the end of a Vector:
-(def correct-primes (assoc primes 4 11)) ;; => [2 3 5 7 11]
+(def correct-primes (assoc primes 4 11)) ; => [2 3 5 7 11]
 
 ;; but like nth above, be careful if you assoc with an index that is out of range
-; (assoc primes 71 "boo!") ;; => runtime error - index out of bounds
+; (assoc primes 71 "boo!") ; => runtime error - index out of bounds
 
 ;; equality works for Vectors:
-(= more-primes correct-primes) ;; => true
+(= more-primes correct-primes) ; => true
 
 (def lunch-line ["Suzie" "Billy" "Jonny"])
 
@@ -108,11 +108,11 @@
 
 ;; subvec returns part of a Vector from start (inclusive) to end (exclusive)
 ;; (subvec your-vector start-idx end-idx)
-(subvec [:a :b :c :d :e :f] 0 1) ;; => [:a]
-(subvec [:a :b :c :d :e :f] 1 4) ;; => [:b :c :d]
+(subvec [:a :b :c :d :e :f] 0 1) ; => [:a]
+(subvec [:a :b :c :d :e :f] 1 4) ; => [:b :c :d]
 
 ;; without a third argument, subvec selects to the end of the Vector:
-(subvec [:a :b :c :d :e :f] 2) ;; => [:c :d :e :f]
+(subvec [:a :b :c :d :e :f] 2) ; => [:c :d :e :f]
 
 ;; This operation is very fast even for large Vectors due to the structural sharing
 ;; used in Persistent Data Structures.

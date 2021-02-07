@@ -44,12 +44,12 @@
 
 ;; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; Keywords can be used as functions to extract values from Maps:
-;; (:x {:x 10, :y 12}) --> 10
-;; (:fname course-instructor) --> "Chris"
-;; (:z some-point) --> nil (value does not exist)
-;;
+
+(:x {:x 10, :y 12}) ; => 10
+(:fname course-instructor) ; => "Chris"
+(:z some-point) ; => nil (value does not exist)
+
 ;; Extract some values from the maps below:
-;;
 
 (def another-point {:x 2, :y 5, :z 22})
 
@@ -71,11 +71,12 @@
 
 ;; ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ;; Keywords can be created from Strings and vice-versa
-;;
-;; (keyword "abc") --> :abc
-;; (name :RockinRobin) --> "RockinRobin"
+
+(keyword "abc") ; => :abc
+(name :RockinRobin) ; => "RockinRobin"
 
 ;; Define jane-username-kwd using the username from another-user above
+
 
 (def everyones-passwords
   {:user_33781 "password123", :user_33782 "password789"})
