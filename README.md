@@ -1,9 +1,9 @@
 # ClojureScript 101
 
-Programming exercises for a beginning ClojureScript programmer. These exercises
-are part of the curriculum for the [Professional ClojureScript course].
+This repository contains programming exercises for a beginning ClojureScript
+programmer. These exercises are part of the curriculum for the [Professional ClojureScript course].
 
-These exercises are focused on the basics of the language:
+The exercises are focused on the basics of the language:
 
 - parenthesis balancing
 - `def` forms
@@ -14,10 +14,11 @@ These exercises are focused on the basics of the language:
 - Vectors
 - Sets
 
-These exercises do not contain much logic. They are more focused on practicing
-writing basic syntax and getting comfortable with your development environment.
+The exercises do not contain logic problems. They are focused on writing basic
+syntax, learning fundamentals, and getting comfortable with your development
+environment.
 
-## Get Started / Install
+## Install / Setup
 
 Make sure that [Node.js], [npm], and the [JVM] are installed. Then, from this directory type:
 
@@ -25,9 +26,9 @@ Make sure that [Node.js], [npm], and the [JVM] are installed. Then, from this di
 npm install
 ```
 
-This will install a folder named `node_modules/` into this folder.
+This will create a folder named `node_modules/` in this directory.
 
-## Exercise Directions
+## Instructions
 
 You will be writing in the `.cljs` files found in the `src-cljs/cljs101/exercises/` folder.
 
@@ -42,7 +43,7 @@ npx shadow-cljs watch tests
 
 This command will automatically compile your code and run a test suite to check your answers.
 
-The goal is to get the test suite to pass all conditions. Good luck!
+Your goal is to get the test suite to pass all conditions. Good luck!
 
 ## License
 
