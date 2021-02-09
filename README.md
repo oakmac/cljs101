@@ -13,6 +13,7 @@ The exercises are focused on the basics of the language:
 - Maps
 - Vectors
 - Sets
+- TODO: functions
 
 The exercises do not contain logic problems. They are focused on writing basic
 syntax, learning fundamentals, and getting comfortable with your development
