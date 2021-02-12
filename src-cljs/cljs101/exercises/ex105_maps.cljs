@@ -174,4 +174,4 @@
 
 
 ;; Suzie changes her search text from "bananas" to "cherry"
-;; Define new-search-options using curent-options and the merge function
+;; Define new-search-options using current-options and the merge function
