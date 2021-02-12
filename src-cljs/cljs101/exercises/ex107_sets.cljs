@@ -108,7 +108,7 @@
 (def kristen-favorites #{"Reading" "Yoga" "Cooking"})
 (def mark-favorites #{"Cooking" "Reading" "TV" "Camping"})
 
-;; What are all of the activities liked by everyone?
+;; What are all of the activities?
 ;; define everyones-favorites
 
 ;; Does anyone like Knitting?
