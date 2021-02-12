@@ -121,7 +121,7 @@
           :color "orange"}})
 
 ;; Player1 fires a missile at Player2!
-;; Define game-state2 with :type = "missle", :velocity = 1.5, :player = "player1" at point [3, 4]
+;; Define game-state2 with :type = "missile", :velocity = 1.5, :player = "player1" at point [3, 4]
 ;; Missles are always black and do not need a :color value
 
 

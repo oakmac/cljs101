@@ -21,6 +21,9 @@
 ;; - Keywords are most often used in the context of Maps as keys:
 ;;
 
+(def a-keyword :hello)
+(def another-keyword :goodbye)
+
 (def some-point {:x 10, :y 12})
 
 (def user-from-the-db
